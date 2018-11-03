@@ -1,0 +1,20 @@
+
+// 内部图标样式
+@mixin inner-icon($color,$textColor) {
+	.inner-icon-vertical {
+		&:not(:hover) {
+			i {
+				color: $color;
+			}
+			span {
+				color: $textColor;
+			}
+			
+		}
+		i.cms {
+			&, & + span {
+				display: block;
+			}
+		}
+	}
+}
