@@ -12,7 +12,7 @@ const path = require('path');
 const devServer = require(resolve('build/config/devServer'));
 
 // 项目 路由规则配置
-const rulesConfig = require('./src/extend/plugins/router/config.json');
+const rulesConfig = require('./src/config/router/config.json');
 
 // 需要输出的配置
 const exportConfig = {

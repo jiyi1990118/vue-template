@@ -19,7 +19,7 @@ const path = require('path');
 // 进程包
 const process = require('process');
 // 路由配置
-const RouterConfig=require('../../src/config/router').default;
+const RouterConfig=require('../../src/config/router/rules/index').default;
 
 // 资源路径列表
 let pathList = [];

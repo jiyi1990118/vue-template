@@ -1,34 +1,9 @@
+// 路由配置
+import config from './config.json';
 // 路由规则
-const RouterRules = [
-	{
-		cache: false,
-		path: '/',
-		redirect: '/draw/index',
-	},
-	{
-		path: '/home',
-		sourcePath: 'home/layout',
-		children: [
-			{
-				isMenu: false,
-				cache: false,
-				title: '页面列表',
-				path: '/',
-				sourcePath: 'home/index',
-			},
-		]
-	},
-	{
-		path: '/draw/:module',
-		title: '自定义绘制',
-		sourcePath: 'draw/index',
-	},
-	// 其他页面重定向
-	{
-		isMenu: false,
-		path: '*',
-		redirect: '/',
-	},
-];
+import rules from './rules';
 
-export default RouterRules
+// 路由配置出口
+export default Object.assign(config, {
+    rules: rules
+});
